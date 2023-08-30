@@ -14,9 +14,9 @@ export default function ExpenseItem(props) {
 
   return (
     <div>
-      {expenses.map((item, index) => (
-        <Card className="expense-item" key={index}>
-          <ExpenseDate date={item.date} />
+      {expenses.map((item) => (
+        <Card className="expense-item" key={item.id}>
+          <ExpenseDate key={item.id} date={item.date} />
           <div className="expense-item__description">
             <h2>{item.title}</h2>
             <div className="expense-item__price">${item.amount}</div>
