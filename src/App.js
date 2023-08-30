@@ -26,11 +26,7 @@ function App() {
 
   return (
     <div>
-      <ExpenseItem
-        title={expenses[0].title}
-        date={expenses[0].date}
-        amount={expenses[0].amount}
-      />
+      <ExpenseItem expenses={expenses} />
     </div>
   );
 }
